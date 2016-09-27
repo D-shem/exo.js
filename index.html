@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Exo1-Js</title>
+  		<meta charset="utf-8">
+	</head>
+
+	<body>
+	    <p id="parag1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat.
+        </p>
+        <button onclick="changer_style('parag1')">push</button>
+        <script type="text/javascript">
+          function changer_style(){
+          var p = document.getElementById('parag1');
+           p.style.color="white";
+           p.style.backgroundColor="#bbb";
+           p.style.border="10px dashed red";
+           p.style.padding="5px";
+
+         }
+        </script>
+        <script>
+        function changer_style(){
+
+        var p = document.getElementById('parag1');
+        p.classList.add("active");
+
+        }
+        </script>
+
+        <style type="text/css">
+         .active{
+      	 color: #fff;
+      	 background: #000;
+      	 border: 10px dashed red;
+      	 padding: 5px;
+         }
+	    </style>
+
+        
+      <script type="text/javascript" src="script.js"></script>
+   </body>
+
+   </html>
